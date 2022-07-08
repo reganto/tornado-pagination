@@ -7,9 +7,7 @@ authors = ["Reganto <tell.reganto@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 tornado = "^6.1"
-YURL = "^1.0.0"
 peewee = "^3.15.0"
-ptpython = "^3.0.20"
 
 [tool.poetry.dev-dependencies]
 

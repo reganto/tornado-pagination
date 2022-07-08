@@ -1,82 +1,10 @@
 [[package]]
-name = "appdirs"
-version = "1.4.4"
-description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "jedi"
-version = "0.18.1"
-description = "An autocompletion tool for Python that can be used for text editors."
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-parso = ">=0.8.0,<0.9.0"
-
-[package.extras]
-qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
-testing = ["Django (<3.1)", "colorama", "docopt", "pytest (<7.0.0)"]
-
-[[package]]
-name = "parso"
-version = "0.8.3"
-description = "A Python Parser"
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.extras]
-qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
-testing = ["docopt", "pytest (<6.0.0)"]
-
-[[package]]
 name = "peewee"
 version = "3.15.0"
 description = "a little orm"
 category = "main"
 optional = false
 python-versions = "*"
-
-[[package]]
-name = "prompt-toolkit"
-version = "3.0.30"
-description = "Library for building powerful interactive command lines in Python"
-category = "main"
-optional = false
-python-versions = ">=3.6.2"
-
-[package.dependencies]
-wcwidth = "*"
-
-[[package]]
-name = "ptpython"
-version = "3.0.20"
-description = "Python REPL build on top of prompt_toolkit"
-category = "main"
-optional = false
-python-versions = ">=3.6"
-
-[package.dependencies]
-appdirs = "*"
-jedi = ">=0.16.0"
-prompt-toolkit = ">=3.0.18,<3.1.0"
-pygments = "*"
-
-[package.extras]
-all = ["black"]
-ptipython = ["ipython"]
-
-[[package]]
-name = "pygments"
-version = "2.12.0"
-description = "Pygments is a syntax highlighting package written in Python."
-category = "main"
-optional = false
-python-versions = ">=3.6"
 
 [[package]]
 name = "tornado"
@@ -86,54 +14,14 @@ category = "main"
 optional = false
 python-versions = ">= 3.5"
 
-[[package]]
-name = "wcwidth"
-version = "0.2.5"
-description = "Measures the displayed width of unicode strings in a terminal"
-category = "main"
-optional = false
-python-versions = "*"
-
-[[package]]
-name = "yurl"
-version = "1.0.0"
-description = "Yurl is alternative url manipulation library"
-category = "main"
-optional = false
-python-versions = "*"
-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "6b6381f4f03c8596bba556c0fb40a00effc28bd72fcc527a166f4d329b0c4e0c"
+content-hash = "204585cac776483b3596d17c04e40485cf5b5b28d92421cba9b2fbad37e81947"
 
 [metadata.files]
-appdirs = [
-    {file = "appdirs-1.4.4-py2.py3-none-any.whl", hash = "sha256:a841dacd6b99318a741b166adb07e19ee71a274450e68237b4650ca1055ab128"},
-    {file = "appdirs-1.4.4.tar.gz", hash = "sha256:7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41"},
-]
-jedi = [
-    {file = "jedi-0.18.1-py2.py3-none-any.whl", hash = "sha256:637c9635fcf47945ceb91cd7f320234a7be540ded6f3e99a50cb6febdfd1ba8d"},
-    {file = "jedi-0.18.1.tar.gz", hash = "sha256:74137626a64a99c8eb6ae5832d99b3bdd7d29a3850fe2aa80a4126b2a7d949ab"},
-]
-parso = [
-    {file = "parso-0.8.3-py2.py3-none-any.whl", hash = "sha256:c001d4636cd3aecdaf33cbb40aebb59b094be2a74c556778ef5576c175e19e75"},
-    {file = "parso-0.8.3.tar.gz", hash = "sha256:8c07be290bb59f03588915921e29e8a50002acaf2cdc5fa0e0114f91709fafa0"},
-]
 peewee = [
     {file = "peewee-3.15.0.tar.gz", hash = "sha256:48eac70be812ac84daa5400fb8e7b545e0c83adcfa05c8e2a8612f9ced4da495"},
-]
-prompt-toolkit = [
-    {file = "prompt_toolkit-3.0.30-py3-none-any.whl", hash = "sha256:d8916d3f62a7b67ab353a952ce4ced6a1d2587dfe9ef8ebc30dd7c386751f289"},
-    {file = "prompt_toolkit-3.0.30.tar.gz", hash = "sha256:859b283c50bde45f5f97829f77a4674d1c1fcd88539364f1b28a37805cfd89c0"},
-]
-ptpython = [
-    {file = "ptpython-3.0.20-py2.py3-none-any.whl", hash = "sha256:99636899ab0e4d026e2ecc9368269114f387b4bb5411e57f072b0bde724d9f99"},
-    {file = "ptpython-3.0.20.tar.gz", hash = "sha256:eafd4ced27ca5dc370881d4358d1ab5041b32d88d31af8e3c24167fe4af64ed6"},
-]
-pygments = [
-    {file = "Pygments-2.12.0-py3-none-any.whl", hash = "sha256:dc9c10fb40944260f6ed4c688ece0cd2048414940f1cea51b8b226318411c519"},
-    {file = "Pygments-2.12.0.tar.gz", hash = "sha256:5eb116118f9612ff1ee89ac96437bb6b49e8f04d8a13b514ba26f620208e26eb"},
 ]
 tornado = [
     {file = "tornado-6.1-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:d371e811d6b156d82aa5f9a4e08b58debf97c302a35714f6f45e35139c332e32"},
@@ -177,11 +65,4 @@ tornado = [
     {file = "tornado-6.1-cp39-cp39-win32.whl", hash = "sha256:d3d20ea5782ba63ed13bc2b8c291a053c8d807a8fa927d941bd718468f7b950c"},
     {file = "tornado-6.1-cp39-cp39-win_amd64.whl", hash = "sha256:548430be2740e327b3fe0201abe471f314741efcb0067ec4f2d7dcfb4825f3e4"},
     {file = "tornado-6.1.tar.gz", hash = "sha256:33c6e81d7bd55b468d2e793517c909b139960b6c790a60b7991b9b6b76fb9791"},
-]
-wcwidth = [
-    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
-    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
-]
-yurl = [
-    {file = "YURL-1.0.0.tar.gz", hash = "sha256:1b9497efc0b4f85af9e5d139fb3e93fca825bccf2c62d463aca489630a248619"},
 ]
