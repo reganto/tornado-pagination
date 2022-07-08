@@ -8,7 +8,7 @@ from tornado.options import parse_command_line
 from modules import Paginator
 from models import Post
 
-BaseURL = pathlib.Path(__file__).parent
+BASE_URL = pathlib.Path(__file__).parent
 
 
 class HomeHandler(RequestHandler):
@@ -21,10 +21,6 @@ class HomeHandler(RequestHandler):
         ctx.update({"posts": posts})
         return ctx
 
-    def check_xsrf_cookie(self) -> None:
-        xsrf = super().check_xsrf_cookie()
-        print(xsrf)
-
 
 class Application(App):
     def __init__(self):
@@ -33,7 +29,7 @@ class Application(App):
         ]
         settings = {
             "debug": True,
-            "template_path": BaseURL / "templates",
+            "template_path": BASE_URL / "templates",
             "ui_modules": {
                 "paginator": Paginator,
             }
@@ -46,3 +42,4 @@ if __name__ == "__main__":
     Application().listen(8000)
     io_loop = asyncio.get_event_loop()
     io_loop.run_forever()
+
