@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Home</h1>
+    {% if request.query_arguments.get("page") %}
+      {% set cp=request.query_arguments.get("page")[0].decode() %}
+    {% else %}
+      {% set cp=1 %}
+    {% end %}
+    {% for post in posts.paginate(int(cp) ,10) %}
+    <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+    </div>
+    <hr>
+    {% end %}
+    {% module paginator(1, 10, posts.count()) %}
+</body>
+
+</html>
